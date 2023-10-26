@@ -12,6 +12,8 @@
   width: 40%;
   height: 70%;
   gap: 3em;
+  position: relative;
+  z-index: 30;
 }
 
 h1 {
@@ -24,6 +26,7 @@ h1 {
   flex-direction: column;
   gap: 3em;
   width: 80%;
+
 }
 
 .login-main form input {
@@ -36,7 +39,8 @@ h1 {
 }
 
 .main {
-  background: linear-gradient(90deg, rgba(80, 0, 0, 1) 0%, rgba(162, 57, 68, 1) 100%);
+  overflow-x: hidden;
+  background: linear-gradient(90deg, rgba(80, 0, 0, 1) 0%, rgb(186, 77, 87) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,3 +59,38 @@ a {
   color: #FBE6E8;
   background-color: #A23944;
 }
+#fpwd{
+  position: relative;
+  z-index: 40;
+}
+
+.guitar
+{
+  position: absolute;
+  bottom: -15%;
+  left: 5%;
+  margin-bottom: 0;
+  width: 60%;
+  z-index: 1;
+}
+.img
+{
+  position: absolute;
+  z-index: 3;
+  animation-name: slidein;
+  animation-duration: 2.5s;
+  width: 0%;
+}
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width:100%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 0%;
+  }
+}
+
+

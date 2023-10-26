@@ -6,7 +6,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-
+  private email :string='';
+  private pwd :string='';
   constructor(private router: Router) {
    }
   logerr():void{
