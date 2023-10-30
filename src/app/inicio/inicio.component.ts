@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class InicioComponent {
 
+  instrumento:string="Batería";
+
   Canciones:string[]=["banana","pepe","pedro","animal"];
 
 }

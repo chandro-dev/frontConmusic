@@ -14,10 +14,21 @@
         <ul class="Canciones">
             <li *ngFor="let cancion of Canciones ">
                 <span>
-                    {{cancion}} <img src="../../assets/Eliminar.png" /> <img src="../../assets/Play.png" />
-                    <input type="button"> <input type="button">
+                    <img src="../../assets/Cancion.png" />
+                    {{cancion}}
+                    <input type="button" src="../../assets/Eliminar.png"/> <input type="button" /> 
+                    <img src="../../assets/Eliminar.png" /> <img src="../../assets/Play.png" />
                 </span>
             </li>
         </ul>
+        <div>
+            <button><img src="../../assets/Agregar.png" alt=""></button>
+            <img src="../../assets/Batería.png" />
+            <h2>{{instrumento}}</h2>
+            <button><img src="../../assets/Cambio.png" alt=""></button>
+        </div>
+        <div>
+            <img src="../../assets/Cancion.png" />
+        </div>
     </div>
 </div>
