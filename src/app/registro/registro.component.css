@@ -1,0 +1,58 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+.main {
+  overflow-x: hidden;
+  background: linear-gradient(90deg, rgba(80, 0, 0, 1) 0%, rgb(186, 77, 87) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.registro-main {
+    display: flex;
+    flex-direction: column;
+    border-radius: 7em;
+    align-items: center;
+    background-color: #FBE6E8;
+    padding: 5em;
+    width: 60%;
+    height: 70%;
+    gap: 3em;
+    position: relative;
+    z-index: 30;
+  }
+
+  .registro-main form {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    width: 80%;
+  
+  }
+
+  .registro-main form input {
+    border-radius: 3em;
+    font-size: 2em;
+    padding: 0.5em;
+    border: 0;
+    margin-bottom: 5%;
+    margin-left: 1em;
+    background-color: #EEE0D7;
+    text-align: center;
+  }
+  
+  #btn-send {
+    width: 50%;
+    color: #FBE6E8;
+    background-color: #A23944;
+  }
+
+  .formulario {
+    text-align: center;
+  }
+
+  

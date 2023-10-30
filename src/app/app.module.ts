@@ -9,6 +9,8 @@ import { ConfigComponent } from './config/config.component';
 import { RecomendacionesComponent } from './recomendaciones/recomendaciones.component';
 import { ReproductorComponent } from './reproductor/reproductor.component';
 import { LetraComponent } from './letra/letra.component';
+import { RegistroComponent } from './registro/registro.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { LetraComponent } from './letra/letra.component';
     ConfigComponent,
     RecomendacionesComponent,
     ReproductorComponent,
-    LetraComponent
+    LetraComponent,
+    RegistroComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,

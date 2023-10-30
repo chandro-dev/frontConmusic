@@ -1,0 +1,23 @@
+<div> 
+    <div>
+        <img src="../../assets/Logo.png" />
+        <h1>Mi música</h1>
+        <img src="../../assets/Perfil.png" />
+        <input type="button" />
+    </div>
+    <div>
+        <img src="../../assets/Casa.png" />
+        <img src="../../assets/Lupa.png" />
+        <img src="../../assets/ListaReproducciones.png" />
+    </div>
+    <div >
+        <ul class="Canciones">
+            <li *ngFor="let cancion of Canciones ">
+                <span>
+                    {{cancion}} <img src="../../assets/Eliminar.png" /> <img src="../../assets/Play.png" />
+                    <input type="button"> <input type="button">
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
