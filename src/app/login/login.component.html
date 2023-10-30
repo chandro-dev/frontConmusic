@@ -7,10 +7,11 @@
     <form (ngSubmit)="logerr()" method="post">
       <input required type="email" placeholder="email" />
       <input required type="password" placeholder="password" />
-      <input type="submit" id="btn-send" />
-      <input type="submit" value="Registrarse" />
+      <input type="submit" id="btn-send" class="btn-send" />
     </form>
+    <button (click)="register()"  class="btn-send">Registrarse</button>
     <a href="/home" id="fpwd">¿Olvidaste tu contraseña?</a>
+    
     <img src="../../assets/image-removebg-preview.png" class="guitar">
   </div>
 </div>

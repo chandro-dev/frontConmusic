@@ -36,7 +36,6 @@ h1 {
   border: 0;
   background-color: #EEE0D7;
   text-align: center;
-  /*Hola*/
 }
 
 .main {
@@ -54,19 +53,30 @@ a {
   font-size: 1.5em;
 }
 
-#btn-send {
+.btn-send {
+  padding: 0.5em;
+
+  width: 40%;
+  align-self: center;
+  color: #FBE6E8;
+  background-color: #A23944;
+  border-radius: 7em;
+  font-size: 2em;
+}
+#btn-send{
   width: 50%;
   align-self: center;
   color: #FBE6E8;
   background-color: #A23944;
+  border-radius: 7em;
 }
-#fpwd{
+
+#fpwd {
   position: relative;
   z-index: 40;
 }
 
-.guitar
-{
+.guitar {
   position: absolute;
   bottom: -15%;
   left: 5%;
@@ -74,18 +84,19 @@ a {
   width: 60%;
   z-index: 1;
 }
-.img
-{
+
+.img {
   position: absolute;
   z-index: 3;
   animation-name: slidein;
   animation-duration: 2.5s;
   width: 0%;
 }
+
 @keyframes slidein {
   from {
     margin-right: 100%;
-    width:100%;
+    width: 100%;
   }
 
   to {
@@ -93,5 +104,3 @@ a {
     width: 0%;
   }
 }
-
-

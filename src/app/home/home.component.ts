@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  lista:string[]=["cancion 1", "cancion 2", "cancion 3", "cancion 4"];
+
+  
+
 }

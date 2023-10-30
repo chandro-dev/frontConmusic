@@ -1,32 +1,35 @@
 <div class="main">
-    <div class="container">
-        <h1>CONMUSIC</h1>
-        <div class="registro-main">
-            <h1>Registro</h1>
-            <form>
-                <div class="formulario">
-                    <img src="../../assets/Persona.png" /> <input  placeholder="Nombre" />
+  <div class="container">
+    <div class="registro-main">
+      <h1>Registro</h1>
+      <form>
+        <div class="formulario">
+          <div class="input"> <img src="../../assets/Persona.png" /> <input placeholder="Nombres" /></div>
 
-                    <img src="../../assets/Persona.png" /> <input  placeholder="Apellido" />
+          <div class="input"><img src="../../assets/Persona.png" /> <input placeholder="Apellidos" /></div>
 
-                    <img src="../../assets/Registro/" /> <input  placeholder="Instrumento" />
+          <div class="input"><img src="../../assets/Registro/Guitarra.png" /> <input placeholder="Instrumento" /></div>
 
-                    <img src="../../assets/Registro/Usuario.png" /> <input  placeholder="Usuario" />
+          <div class="inpu"><img src="../../assets/Registro/Usuario.png" /> <input placeholder="Usuario" /></div>
 
-                    <img src="../../assets/Registro/Correo.png" /> <input required type="email" placeholder="Correo" /> 
+          <div class="input"><img src="../../assets/Registro/Correo.png" /> <input required type="email"
+              placeholder="Correo" /></div>
+          <div class="input"> <img src="../../assets/Registro/Contraseña.png" /> <input required type="password"
+              placeholder="Contraseña" /></div>
 
-                    <img src="../../assets/Registro/Contraseña.png" /> <input required type="password" placeholder="Contraseña" />
+          <div class="input"> <img src="../../assets/Registro/Calendario.png" /> <input required type="datetime"
+              placeholder="Fecha de Nacimiento" /></div>
 
-                    <img src="../../assets/Registro/Calendario.png" /> <input required type="datetime" placeholder="Fecha Nacimiento" />
+          <div class="input"><img src="../../assets/Registro/Confirmar_contraseña.png" /> <input required type="password"
+            placeholder="Confirmar contraseña" /></div>
 
-                    <img src="../../assets/Registro/Confirmar_contraseña.png" /> <input required type="password" placeholder="Confirmar contraseña" />
-
-                    <input type="submit" id="btn-send" value="Registrar" />
-                    <input type="submit" value="Regresar" />
-                </div>
-            </form>
-            
+          <input type="submit" id="btn-send" value="Registrar" />
+          <input type="submit" value="Regresar" (click)="volverAtras()" />
         </div>
-        <img src="../../assets/Guitarra.png" />    
+      </form>
+
     </div>
+    <!---img src="../../assets/Guitarra.png"!--/>
+        <!-->
+  </div>
 </div>

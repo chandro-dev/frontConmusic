@@ -13,4 +13,7 @@ export class LoginComponent {
   logerr():void{
     this.router.navigate(['/home']);
   }
+  register():void{
+    this.router.navigate(['/registro']);
+  }
 }

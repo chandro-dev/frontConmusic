@@ -7,7 +7,8 @@ import { InicioComponent } from './inicio/inicio.component';
 
 const routes: Routes = [
   {path:'home',component:InicioComponent},
-  {path:'',component:LoginComponent}
+  {path:'',component:LoginComponent},
+  {path:'registro',component:RegistroComponent}
 ];
 
 @NgModule({

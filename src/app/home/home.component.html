@@ -1,12 +1,21 @@
-<div class="main">
-
-  <div id="div-config">
-    <app-config></app-config>
-  </div >
-  <div id="div-recomendaciones">
-    <app-recomendaciones></app-recomendaciones>
-  </div>
-  <div id="div-letras">
-    <app-letra></app-letra>
+<div id="div-main">
+  <nav id="buscador">
+    <input type="text" />
+    <button><img style="height:40px;" src="../../assets/Lupa.png" /></button>
+  </nav>
+  <ul>
+    <li *ngFor="let cancion of lista" >
+      <img src="../../assets/nota.png">
+      <h2>{{cancion}}</h2>
+      <img src="../../assets/trash.webp">
+      <img scr="../../assets/play.webp">
+      <img>
+    </li>
+  </ul>
+  <div id="div-instrumento">
+    <img src="../../assets/more.png">
+    <img  src="../../assets/Batería.png">
+    Bateria
+    <img src="../../assets/reload.png">
   </div>
 </div>
