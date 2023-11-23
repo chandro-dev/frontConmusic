@@ -55,7 +55,7 @@ a {
 
 .btn-send {
   padding: 0.5em;
-
+  z-index: 7;
   width: 40%;
   align-self: center;
   color: #FBE6E8;
