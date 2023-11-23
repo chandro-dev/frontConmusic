@@ -9,6 +9,11 @@
       <h2>{{cancion}}</h2>
       <img src="../../assets/trash.webp">
       <img scr="../../assets/play.webp">
+      <button (click)="descargarArchivo()"> Descargar</button>
+      <audio controls>
+        <source src="../../assets/music/Todo de Cabeza - Kaleth Morales.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
       <img>
     </li>
   </ul>

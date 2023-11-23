@@ -101,7 +101,7 @@ li {
   border-bottom: 1px solid #FBE6E8;
   font-size: 1em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   height: 30%;
 }
 

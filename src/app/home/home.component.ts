@@ -9,6 +9,10 @@ import { Route, Router } from '@angular/router';
 export class HomeComponent {
 
   lista:string[]=["cancion 1", "cancion 2", "cancion 3", "cancion 4"];
-
-
+  descargarArchivo() {
+    const enlace = document.createElement('a');
+    enlace.href = "../../assets/music/Todo de Cabeza - Kaleth Morales.mp3";
+    enlace.download = "../../assets/music/Todo de Cabeza - Kaleth Morales.mp3";
+    enlace.click();
+  }
 }
