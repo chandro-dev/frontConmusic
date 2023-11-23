@@ -3,8 +3,8 @@
 }
 
 img {
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 #div-main {
@@ -43,6 +43,7 @@ img {
 #div-home {
   background-color: #500000;
   grid-area: 2/2;
+  height: 80vh;
 }
 
 #div-reproductor {
