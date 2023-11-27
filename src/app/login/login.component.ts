@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { persona } from '../models/persona';
+import { AuthService } from '../servicios/auth/auth.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
   public persona = new persona();
@@ -14,11 +16,9 @@ export class LoginComponent {
       this.sauth.authService(this.persona);
 
       
-   }
-  logerr():void{
-    this.router.navigate(['/home']);
+    }
   }
-  register():void{
+  register(): void {
     this.router.navigate(['/registro']);
   }
 }
