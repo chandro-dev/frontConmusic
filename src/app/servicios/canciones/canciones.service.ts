@@ -1,9 +1,16 @@
 import { Injectable } from '@angular/core';
 
+
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CancionesService {
+  private srcUrl:String='';
 
-  constructor() { }
+  getUrl():String{
+    return this.srcUrl;
+  }
+  setUrl(url:String){
+    this.srcUrl=url;
+  }
 }
