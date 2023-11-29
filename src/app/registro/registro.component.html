@@ -1,35 +1,35 @@
-<div class="main">
   <div class="container">
     <div class="registro-main">
       <h1>Registro</h1>
       <form>
         <div class="formulario">
-          <div class="input"> <img src="../../assets/Persona.png" /> <input placeholder="Nombres" /></div>
+          <div class="input"> <img src="../../assets/Persona.png" /> <input [(ngModel)]="persona.nombre"
+              placeholder="nombre" name="nombre" /></div>
 
-          <div class="input"><img src="../../assets/Persona.png" /> <input placeholder="Apellidos" /></div>
+          <div class="input"><img src="../../assets/Persona.png" /> <input [(ngModel)]="persona.apellido"
+              placeholder="apellido" name="apellido" /></div>
 
-          <div class="input"><img src="../../assets/Registro/Guitarra.png" /> <input placeholder="Instrumento" /></div>
+          <div class="input"> <img src="../../assets/nota.png" /> <input [(ngModel)]="persona.instrumento" placeholder="instrumento" name="instrumento" />
+          </div>
 
-          <div class="inpu"><img src="../../assets/Registro/Usuario.png" /> <input placeholder="Usuario" /></div>
 
-          <div class="input"><img src="../../assets/Registro/Correo.png" /> <input required type="email"
-              placeholder="Correo" /></div>
-          <div class="input"> <img src="../../assets/Registro/Contraseña.png" /> <input required type="password"
-              placeholder="Contraseña" /></div>
+          <div class="input"><img src="../../assets/Registro/Correo.png" /> <input [(ngModel)]="persona.correo" required
+              type="email" name="correo" placeholder="Correo" /></div>
+          <div class="input"> <img src="../../assets/Registro/Contraseña.png" /> <input [(ngModel)]="persona.pass"
+              required type="password" name="pass" placeholder="Contraseña" /></div>
 
-          <div class="input"> <img src="../../assets/Registro/Calendario.png" /> <input required type="datetime"
+          <div class="input"> <img src="../../assets/Registro/Calendario.png" /> <input
+              [(ngModel)]="persona.fecha_nacimiento" name="fecha_nacimiento" required type="datetime"
               placeholder="Fecha de Nacimiento" /></div>
 
-          <div class="input"><img src="../../assets/Registro/Confirmar_contraseña.png" /> <input required type="password"
-            placeholder="Confirmar contraseña" /></div>
+          <div class="input"><img src="../../assets/Registro/Confirmar_contraseña.png" /> <input required
+              type="password" placeholder="Confirmar contraseña" /></div>
 
-          <input type="submit" id="btn-send" value="Registrar" />
-          <input type="submit" value="Regresar" (click)="volverAtras()" />
+          <input type="submit" id="btn-send" value="Registrar" (click)="registrar()" />
+          <input type="submit" value="Regresar" id="atras" (click)="volverAtras()" />
         </div>
       </form>
 
     </div>
-    <!---img src="../../assets/Guitarra.png"!--/>
-        <!-->
+
   </div>
-</div>

@@ -7,29 +7,24 @@ input {
   /* Sin relleno */
   /* Agrega otros estilos personalizados según tus necesidades */
 }
-img{
-    height: 100px;
-    margin: 0 auto;
+
+img {
+  height: 100px;
+  margin: 0 auto;
 }
 
 button {
   border: none;
-  /* Elimina el borde */
   background: transparent;
-  /* Fondo transparente */
   padding: 0;
-  /* Sin relleno */
-  /* Agrega otros estilos personalizados según tus necesidades */
 }
 
 ul {
   list-style: none;
-  /* Elimina los marcadores de lista (viñetas) */
+
   margin: 0;
-  /* Elimina el margen predeterminado */
   padding: 0;
-  /* Elimina el espaciado interno predeterminado */
-  /* Agrega otros estilos personalizados según tus necesidades */
+
 }
 
 ul {
@@ -44,10 +39,8 @@ ul {
 
 li {
   margin: 0;
-  /* Elimina el margen predeterminado de los elementos de lista */
   padding: 0;
-  /* Elimina el espaciado interno predeterminado de los elementos de lista */
-  /* Agrega otros estilos personalizados según tus necesidades */
+
 }
 
 
@@ -55,16 +48,16 @@ li {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: 1fr 3fr 2fr;
+  grid-template-rows: 1fr 3fr;
   align-items: center;
 }
 
 #buscador {
   background-color: #FBE6E8;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   align-items: center;
-  height: 50%;
+  height: 40%;
   border-radius: 20px;
   position: relative;
   align-items: center;
@@ -91,9 +84,9 @@ ul {
   background-color: #E04955;
   border-radius: 20px;
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
   align-self: center;
-  height: 30vh;
+  height: 80%;
   overflow-y: scroll;
 }
 
@@ -101,21 +94,13 @@ li {
   border-bottom: 1px solid #FBE6E8;
   font-size: 1em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  justify-content: center;
+  grid-template-columns: 20% 20% 20% 20%;
   height: 30%;
+  padding: 20px;
 }
 
-#div-instrumento {
-  top: 0;
-  width: 60%;
-  border-radius: 20px;
-  background-color: #E04955;
-  padding: 20px;
-  display: grid;
-  font-size: 2em;
-  margin-bottom: 10px;
-  align-items: center;
-  margin :0 auto;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+strong {
+  font-weight: 500;
 }

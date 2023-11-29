@@ -11,6 +11,7 @@ import { ReproductorComponent } from './reproductor/reproductor.component';
 import { LetraComponent } from './letra/letra.component';
 import { RegistroComponent } from './registro/registro.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,12 +23,14 @@ import { InicioComponent } from './inicio/inicio.component';
     ReproductorComponent,
     LetraComponent,
     RegistroComponent,
-    InicioComponent
+    InicioComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

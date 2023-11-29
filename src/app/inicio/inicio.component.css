@@ -11,8 +11,8 @@ img {
   position: relative;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 8fr;
-  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 20% 70% 10%;
 }
 
 #nav-superior {
@@ -38,12 +38,13 @@ img {
   gap: 0.5em;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 #div-home {
   background-color: #500000;
   grid-area: 2/2;
-  height: 80vh;
+  height: 100%;
 }
 
 #div-reproductor {

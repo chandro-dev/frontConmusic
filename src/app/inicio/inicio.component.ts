@@ -4,16 +4,18 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
+  styleUrls: ['./inicio.component.css'],
 })
 export class InicioComponent {
+  instrumento: string = 'Batería';
 
-  instrumento:string="Batería";
-
-  constructor(private router: Router)
-  {}
-  login(){
+  constructor(private router: Router) {}
+  login() {
     this.router.navigate(['/']);
   }
+  receivedMessage = '';
 
+  receiveMessage(message: string) {
+    this.receivedMessage = message;
+  }
 }

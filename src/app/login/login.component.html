@@ -4,14 +4,12 @@
   </div>
   <div class="login-main">
     <h1>CONMUSIC</h1>
-    <form (ngSubmit)="logerr()" method="post">
-      <input required type="email" placeholder="email" />
-      <input required type="password" placeholder="password" />
-      <input type="submit" id="btn-send" class="btn-send" />
+    <form (ngSubmit)="loger()" method="post">
+      <input required name="correo" [(ngModel)]="persona.correo" type="email" placeholder="email" />
+      <input required type="password" name="pass" [(ngModel)]="persona.pass" placeholder="password" />
     </form>
-    <button (click)="register()"  class="btn-send">Registrarse</button>
-    <a href="/home" id="fpwd">¿Olvidaste tu contraseña?</a>
-    
-    <img src="../../assets/image-removebg-preview.png" class="guitar">
+    <h1 *ngIf="message">{{message}}</h1>
+    <button type="submit" (click)="loger()" class="btn-send">Enviar</button>
+    <button (click)="register()" class="btn-send">Registrarse</button>
   </div>
 </div>

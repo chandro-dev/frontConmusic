@@ -9,13 +9,17 @@ import { AuthService } from '../servicios/auth/auth.service';
 })
 export class LoginComponent {
   public persona = new persona();
-
-  constructor(private router: Router, private sauth: AuthService) {}
-  logerr(): void {
+  message:String='';
+  constructor(private router: Router, private sauth: AuthService) {
+    this.sauth.validToken();
+  }
+  loger(): void {
     if (this.persona.correo != '' && this.persona.pass != '') {
-      this.sauth.authService(this.persona);
+      if(this.sauth.authService(this.persona)){
 
-      
+      }else{
+        this.message='Credenciales incorrectas'
+      };
     }
   }
   register(): void {
