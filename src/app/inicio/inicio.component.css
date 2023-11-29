@@ -14,11 +14,15 @@ img {
   grid-template-columns: 10% 90%;
   grid-template-rows: 20% 70% 10%;
 }
-
+#nav-superior button{
+  background-color: transparent;
+  border-radius: 20px;
+  width: 50%;
+}
 #nav-superior {
   font-size: 2em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-area: 1/span 2;
   background-color: #FBE6E8;
   align-items: center;

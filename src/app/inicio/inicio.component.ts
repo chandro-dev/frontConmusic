@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { LocalStorageService } from '../servicios/localstorage/local-storage.service';
 
 @Component({
   selector: 'app-inicio',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 export class InicioComponent {
   instrumento: string = 'Batería';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private sstorage: LocalStorageService) {}
   login() {
     this.router.navigate(['/']);
   }
@@ -17,5 +18,9 @@ export class InicioComponent {
 
   receiveMessage(message: string) {
     this.receivedMessage = message;
+  }
+  cerrarSesion() {
+    this.sstorage.eliminarElemento('jwt');
+    this.router.navigate(['/']);
   }
 }
